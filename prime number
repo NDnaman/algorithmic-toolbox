@@ -1,0 +1,43 @@
+#include<stdio.h>
+int main()
+
+{
+    int mNum;
+    printf("ENTER NUMBER\n");
+    scanf ("%d", &mNum);
+
+    int mvar =0;
+    while (mvar<1)
+    {
+        if (mNum>0)
+        {
+            mvar=2;
+        }
+
+        else
+        {
+            printf("INVALID INPUT\n");
+            printf("ENTER INTEGER > 0\n");
+            scanf("%d\n", &mNum);
+        }
+    }
+
+    int i, i2;
+    for (i=2; i<mNum; i++)
+    {
+        i2 = mNum % i;
+
+        if (mNum % i==0)
+        {
+            printf  ("NOT A PRIME NUMBER \n");
+            break;
+        }
+
+    }
+    if (i2!=0)
+    {
+        printf("IT IS A PRIME NUMBER! \n");
+    }
+
+    return 0;
+}
